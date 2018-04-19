@@ -21,13 +21,30 @@
               <input name="username" type="text"  value="用户名" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
               <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>
 <input name="password" type="password" id="password" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};"/>
-              <input value="登录" style="width:100%;" type="submit">
+              <input value="登录" style="width:100%;" type="submit" onclick="jump();">
           </form>
       </div>
       <div class="copyright">版权为Mary小公举所有 </div>
 </div>
 <div style="text-align:center;">
-<p>更多精彩：<a href="index2.html" target="_blank">源码之家</a></p>
+<p>更多精彩：<a href="index2.html" target="_parent">源码之家</a></p>
 </div>
+      
+     <script type="text/javascript">
+           
+           function jump(){
+                 //var username = document.
+                 //var password = "";
+                if(false){
+          
+                 alert("xxxxx");
+                 }else{
+
+                        window.location.href= "index2.html";              
+                 }
+                 
+           }
+      
+     </script>
 </body>
 </html>
