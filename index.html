@@ -20,7 +20,7 @@
                <p>以你的智商应该知道用户名和密码^_^</p>
           </div>
           <form method="post">
-              <input name="username" type="text"  value="用户名" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
+              <input name="username" type="text"  value="用户名" id="username" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
               <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>
 <input name="password" type="password" id="password" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};"/>
               <input value="登录" style="width:100%;" type="button" onclick="jump();">
@@ -44,15 +44,13 @@
 
                  alert("user");
                                //   window.location.href='http://520mary.com/index2.html';                                        
-                // var user = document.getElementById("username").value;
-       // var psw = document.getElementById("password_text").value;
-//                 if(user=="Mary"&&psw=="0321"){ 
-                 if(false){
-                //                                       
+          var user = document.getElementById("username").value;
+         var psw = document.getElementById("password").value;
+            if((user=="Mary" || user=="mary")&&psw=="0321"){ 
+                        window.location.href='http://520mary.com/index2.html';                           
                  alert("xxxxx");
-                 }else{
-window.location.href='http://520mary.com/index2.html';  
-                       alert("提示：密码4位数字");
+             }else{
+                       alert("就知道你不会，给你个提示：用户名是英文名，密码是4位数字");
                         //window.location= 'index2.html';   
                        
                        //alert("2222");
